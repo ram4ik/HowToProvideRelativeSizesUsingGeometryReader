@@ -19,6 +19,11 @@ struct ContentView: View {
                     .frame(width: geometry.size.width / 2, height: 50)
                     .background(Color.orange)
             }
+            
+            Text("Hello World")
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(Color.red)
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }
