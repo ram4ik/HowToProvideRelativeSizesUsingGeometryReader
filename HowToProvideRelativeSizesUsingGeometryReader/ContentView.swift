@@ -10,7 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        GeometryReader { geometry in
+            HStack(spacing: 0) {
+                Text("Left")
+                    .frame(width: geometry.size.width / 2, height: 50)
+                    .background(Color.yellow)
+                Text("Right")
+                    .frame(width: geometry.size.width / 2, height: 50)
+                    .background(Color.orange)
+            }
+        }
     }
 }
 
